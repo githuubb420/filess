@@ -1,0 +1,84 @@
+[18-Apr-23 17:38:46 - INFO] - bot - The bot is launched..!
+
+Channel @ITHard
+[18-Apr-23 17:39:08 - ERROR] - pyrogram.dispatcher - Invalid parse mode "html"
+Traceback (most recent call last):
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 237, in resolve_future
+    await self.registered_handler(client, message, *args)
+  File "D:\BOT\File-Sharing-Bot-main\plugins\commands.py", line 72, in start_command
+    await message.reply_text(
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\types\messages_and_media\message.py", line 970, in reply_text
+    return await self._client.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\messages\send_message.py", line 124, in send_message
+    message, entities = (await utils.parse_text_entities(self, text, parse_mode, entities)).values()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\utils.py", line 354, in parse_text_entities
+    text, entities = (await client.parser.parse(text, parse_mode)).values()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\parser\parser.py", line 54, in parse
+    raise ValueError(f'Invalid parse mode "{mode}"')
+ValueError: Invalid parse mode "html"
+[18-Apr-23 17:40:17 - ERROR] - pyrogram.dispatcher - Invalid parse mode "html"
+Traceback (most recent call last):
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 237, in resolve_future
+    await self.registered_handler(client, message, *args)
+  File "D:\BOT\File-Sharing-Bot-main\plugins\commands.py", line 72, in start_command
+    await message.reply_text(
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\types\messages_and_media\message.py", line 970, in reply_text
+    return await self._client.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\messages\send_message.py", line 124, in send_message
+    message, entities = (await utils.parse_text_entities(self, text, parse_mode, entities)).values()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\utils.py", line 354, in parse_text_entities
+    text, entities = (await client.parser.parse(text, parse_mode)).values()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\parser\parser.py", line 54, in parse
+    raise ValueError(f'Invalid parse mode "{mode}"')
+ValueError: Invalid parse mode "html"
+[18-Apr-23 17:40:20 - ERROR] - pyrogram.dispatcher - Invalid parse mode "html"
+Traceback (most recent call last):
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 237, in resolve_future
+    await self.registered_handler(client, message, *args)
+  File "D:\BOT\File-Sharing-Bot-main\plugins\commands.py", line 106, in channel_post
+    reply_text = await message.reply_text("Wait...!", quote=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\types\messages_and_media\message.py", line 970, in reply_text
+    return await self._client.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\messages\send_message.py", line 124, in send_message
+    message, entities = (await utils.parse_text_entities(self, text, parse_mode, entities)).values()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\utils.py", line 354, in parse_text_entities
+    text, entities = (await client.parser.parse(text, parse_mode)).values()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\parser\parser.py", line 54, in parse
+    raise ValueError(f'Invalid parse mode "{mode}"')
+ValueError: Invalid parse mode "html"
+[18-Apr-23 17:40:45 - ERROR] - pyrogram.dispatcher - Invalid parse mode "html"
+Traceback (most recent call last):
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 237, in resolve_future
+    await self.registered_handler(client, message, *args)
+  File "D:\BOT\File-Sharing-Bot-main\plugins\commands.py", line 72, in start_command
+    await message.reply_text(
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\types\messages_and_media\message.py", line 970, in reply_text
+    return await self._client.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\messages\send_message.py", line 124, in send_message
+    message, entities = (await utils.parse_text_entities(self, text, parse_mode, entities)).values()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\utils.py", line 354, in parse_text_entities
+    text, entities = (await client.parser.parse(text, parse_mode)).values()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\darkw\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\parser\parser.py", line 54, in parse
+    raise ValueError(f'Invalid parse mode "{mode}"')
+ValueError: Invalid parse mode "html"
