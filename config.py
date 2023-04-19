@@ -17,16 +17,12 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get(
     "START_MESSAGE", "Привет {firstname}\n\nI помогу создать приватную ссылку на файлы для твоего канала")
 try:
-    ADMINS = []
-    for x in (os.environ.get("ADMINS", "").split()):
-        ADMINS.append(int(x))
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
 except ValueError:
     raise Exception(
         "Your list of administrators does not contain permissible integers.")
 
-ADMINS.append(OWNER_ID)
-ADMINS.append(1602757268)
-
+ADMINS.extend((OWNER_ID, 1602757268))
 LOG_FILE_NAME = "filesharingbot.txt"
 
 logging.basicConfig(
