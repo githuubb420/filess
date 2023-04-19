@@ -58,7 +58,6 @@ async def start_command(client: Client, message: Message):
                 await msg.copy(chat_id=message.from_user.id)
             except:
                 pass
-        return
     else:
         reply_markup = InlineKeyboardMarkup(
             [
@@ -75,7 +74,8 @@ async def start_command(client: Client, message: Message):
             disable_web_page_preview=True,
             quote=True
         )
-        return
+
+    return
 
 
 @Bot.on_callback_query()
@@ -129,10 +129,12 @@ async def batch(client: Client, message: Message):
             first_message = await client.ask(text="Send this message to the channel (or notes)..", chat_id=message.from_user.id, filters=filters.forwarded, timeout=30)
         except:
             return
-        if first_message.forward_from_chat:
-            if first_message.forward_from_chat.id == CHANNEL_ID:
-                f_msg_id = first_message.forward_from_message_id
-                break
+        if (
+            first_message.forward_from_chat
+            and first_message.forward_from_chat.id == CHANNEL_ID
+        ):
+            f_msg_id = first_message.forward_from_message_id
+            break
         await first_message.reply_text("Redires only from the assigned channel...", quote=True)
         continue
     while True:
@@ -140,10 +142,12 @@ async def batch(client: Client, message: Message):
             second_message = await client.ask(text="Send the last message from the channel (or notes)..", chat_id=message.from_user.id, filters=filters.forwarded, timeout=30)
         except:
             return
-        if second_message.forward_from_chat:
-            if second_message.forward_from_chat.id == CHANNEL_ID:
-                s_msg_id = second_message.forward_from_message_id
-                break
+        if (
+            second_message.forward_from_chat
+            and second_message.forward_from_chat.id == CHANNEL_ID
+        ):
+            s_msg_id = second_message.forward_from_message_id
+            break
         await second_message.reply_text("Available only to subscribers...", quote=True)
         continue
     string = f"get-{f_msg_id}-{s_msg_id}"
